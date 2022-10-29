@@ -47,6 +47,9 @@ $button-purple-bg: #975bec;
 $button-purple-border: #7345b3;
 $button-purple-shadow: 7px 7px 0px $button-purple-border;
 $button-black-shadow: 4px 4px 0px $color-black;
+$button-orange-bg: #fc4f24;
+$button-orange-border: #b83514;
+$button-orange-shadow: 4px 4px 0px $button-orange-border;
 
 // Card
 $card-orange-bg: #fc4f24;
@@ -62,6 +65,10 @@ $card-yellow-shadow: 12px 12px 0px $card-yellow-border;
 
 .section {
   padding: 4rem 0;
+
+  @media all and (max-width: $breakpoint-tablet) {
+    padding: 2rem 0;
+  }
 }
 
 .row {
@@ -71,6 +78,7 @@ $card-yellow-shadow: 12px 12px 0px $card-yellow-border;
   max-width: 1920px;
 
   @media all and (max-width: $breakpoint-tablet) {
+    padding: 1rem 0;
     width: 90%;
   }
 }
@@ -83,7 +91,7 @@ h1,
 .h1 {
   font-size: $font-h1;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1;
   color: $color-black;
 
   @media all and (max-width: $breakpoint-tablet-sm) {
@@ -95,7 +103,7 @@ h2,
 .h2 {
   font-size: $font-h2;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1;
   color: $color-black;
 
   @media all and (max-width: $breakpoint-tablet-sm) {
@@ -107,7 +115,7 @@ h3,
 .h3 {
   font-size: $font-h3;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1;
   color: $color-black;
 
   @media all and (max-width: $breakpoint-tablet-sm) {
@@ -119,7 +127,7 @@ h4,
 .h4 {
   font-size: $font-h4;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1;
   color: $color-black;
 
   @media all and (max-width: $breakpoint-tablet-sm) {
@@ -131,7 +139,7 @@ h5,
 .h5 {
   font-size: $font-h5;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1;
   color: $color-black;
 
   @media all and (max-width: $breakpoint-tablet-sm) {
@@ -143,7 +151,7 @@ h6,
 .h6 {
   font-size: $font-h6;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1;
   color: $color-black;
 
   @media all and (max-width: $breakpoint-tablet-sm) {

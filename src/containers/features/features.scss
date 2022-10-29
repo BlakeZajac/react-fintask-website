@@ -1,0 +1,70 @@
+@import "../../App.scss";
+
+.features {
+  &__heading {
+    padding-bottom: 5rem;
+    text-align: center;
+  }
+
+  &__items {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__item {
+      cursor: pointer;
+      padding: 40px 30px;
+      border-radius: 20px;
+      position: relative;
+      top: 0;
+      width: 100%;
+      transition: all 0.2s ease-in-out;
+
+      h3 {
+        padding-bottom: 1rem;
+      }
+
+      img {
+        width: 100%;
+        object-fit: contain;
+        margin: 0 0 -40px -30px;
+        border-bottom-left-radius: 20px;
+      }
+
+      @media all and (min-width: $breakpoint-tablet-up) {
+        width: 31.33%;
+
+        &:not(:last-child) {
+          margin-right: 1rem;
+        }
+      }
+
+      @media all and (max-width: $breakpoint-tablet-sm) {
+        &:not(:last-child) {
+          margin-bottom: 3rem;
+        }
+      }
+
+      &:hover {
+        top: -10px;
+        transition: all 0.2s ease-in-out;
+      }
+
+      &:first-child {
+        background: #fcfce8;
+        border: 2px solid rgba(255, 209, 90, 0.25);
+      }
+
+      &:nth-of-type(2) {
+        background: #f1e8fc;
+        border: 2px solid rgba(151, 91, 236, 0.2);
+      }
+
+      &:last-child {
+        background: #e8f7fc;
+        border: 2px solid rgba(26, 188, 254, 0.2);
+      }
+    }
+  }
+}

@@ -1,0 +1,95 @@
+@import "../../App.scss";
+
+.advantages {
+  &__heading {
+  }
+
+  &__button {
+  }
+
+  &__items {
+    &__item {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 5rem;
+      padding: 5rem 2.5rem;
+      border-radius: 50px;
+
+      &:first-child {
+        background: $card-orange-bg;
+
+        button {
+          display: none;
+        }
+      }
+
+      &:nth-of-type(2) {
+        background: $card-green-bg;
+
+        button {
+          display: none;
+        }
+      }
+
+      &:last-child {
+        background: $card-purple-bg;
+
+        .advantages__items__item__content__icon {
+          display: none;
+        }
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 4rem;
+      }
+
+      &__content {
+        flex: 1;
+        max-width: 800px;
+        margin-bottom: auto;
+
+        h2,
+        p {
+          color: $color-white;
+        }
+
+        h2 {
+          max-width: 600px;
+          padding-bottom: 1.5rem;
+        }
+
+        p {
+          padding-bottom: 3rem;
+        }
+
+        &__icon {
+          padding: 12px;
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          border-radius: 20px;
+          border: 1px solid rgba(255, 255, 255, 0.2);
+          width: fit-content;
+
+          p {
+            padding-bottom: 0;
+          }
+
+          &:not(:last-child) {
+            margin-bottom: 1rem;
+          }
+        }
+      }
+
+      &__image {
+        flex: 0.75;
+        margin: 0 -2.6rem -5.4rem 0;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
