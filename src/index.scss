@@ -1,0 +1,168 @@
+// Fonts
+@font-face {
+  font-family: "CabinetGrotesk-Variable";
+  src: url("./assets/fonts/CabinetGrotesk_Complete/Fonts/WEB/fonts/CabinetGrotesk-Variable.woff2")
+      format("woff2"),
+    url("./assets/fonts/CabinetGrotesk_Complete/Fonts/WEB/fonts/CabinetGrotesk-Variable.woff")
+      format("woff"),
+    url("./assets/fonts/CabinetGrotesk_Complete/Fonts/WEB/fonts/CabinetGrotesk-Variable.ttf")
+      format("truetype");
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+// Breakpoints
+$breakpoint-desktop: 981px;
+$breakpoint-tablet: 980px;
+$breakpoint-tablet-up: 768px;
+$breakpoint-tablet-sm: 767px;
+$breakpoint-mobile-up: 480px;
+$breakpoint-mobile: 479px;
+
+// Typography
+$font-family: "CabinetGrotesk-Variable";
+$font-h1: 4.5rem;
+$font-h2: 3.5rem;
+$font-h3: 2rem;
+$font-h4: 1.5rem;
+$font-h5: 1.25rem;
+$font-h6: 1.125rem;
+$font-h1-mobile: 3rem;
+$font-h2-mobile: 2.5rem;
+$font-h3-mobile: 1.75rem;
+$font-h4-mobile: 1.25rem;
+$font-h5-mobile: 1.125rem;
+$font-h6-mobile: 1rem;
+
+// Color
+$color-black: #000;
+$color-black-50: rgba(0, 0, 0, 0.5);
+$color-white: #fff;
+$color-orange: #fc4f24;
+$color-light-yellow: #fcfce8;
+
+// Button
+$button-purple-bg: #975bec;
+$button-purple-border: #7345b3;
+$button-purple-shadow: 7px 7px 0px $button-purple-border;
+$button-black-shadow: 4px 4px 0px $color-black;
+
+// Card
+$card-orange-bg: #fc4f24;
+$card-green-bg: #14501a;
+$card-purple-bg: #975bec;
+$card-yellow-bg: #faff5a;
+$card-yellow-border: #edf500;
+$card-yellow-shadow: 12px 12px 0px $card-yellow-border;
+
+.orange {
+  color: $color-orange;
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+.row {
+  padding: 2rem 0;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1920px;
+
+  @media all and (max-width: $breakpoint-tablet) {
+    width: 90%;
+  }
+}
+
+body {
+  font-family: $font-family;
+}
+
+h1,
+.h1 {
+  font-size: $font-h1;
+  font-weight: 700;
+  line-height: 1.2;
+  color: $color-black;
+
+  @media all and (max-width: $breakpoint-tablet-sm) {
+    font-size: $font-h1-mobile;
+  }
+}
+
+h2,
+.h2 {
+  font-size: $font-h2;
+  font-weight: 700;
+  line-height: 1.2;
+  color: $color-black;
+
+  @media all and (max-width: $breakpoint-tablet-sm) {
+    font-size: $font-h2-mobile;
+  }
+}
+
+h3,
+.h3 {
+  font-size: $font-h3;
+  font-weight: 700;
+  line-height: 1.2;
+  color: $color-black;
+
+  @media all and (max-width: $breakpoint-tablet-sm) {
+    font-size: $font-h3-mobile;
+  }
+}
+
+h4,
+.h4 {
+  font-size: $font-h4;
+  font-weight: 700;
+  line-height: 1.2;
+  color: $color-black;
+
+  @media all and (max-width: $breakpoint-tablet-sm) {
+    font-size: $font-h4-mobile;
+  }
+}
+
+h5,
+.h5 {
+  font-size: $font-h5;
+  font-weight: 700;
+  line-height: 1.2;
+  color: $color-black;
+
+  @media all and (max-width: $breakpoint-tablet-sm) {
+    font-size: $font-h5-mobile;
+  }
+}
+
+h6,
+.h6 {
+  font-size: $font-h6;
+  font-weight: 700;
+  line-height: 1.2;
+  color: $color-black;
+
+  @media all and (max-width: $breakpoint-tablet-sm) {
+    font-size: $font-h6-mobile;
+  }
+}
+
+p,
+ol,
+ul {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.5;
+
+  @media all and (max-width: $breakpoint-tablet-sm) {
+    font-size: 1.125rem;
+  }
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
