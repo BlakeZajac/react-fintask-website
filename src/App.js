@@ -5,6 +5,7 @@ import Hero from "./components/hero/Hero";
 import Brand from "./components/brand/Brand";
 import Features from "./containers/features/Features";
 import Advantages from "./containers/advantages/Advantages";
+import Pricing from "./containers/pricing/Pricing";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Brand />
       <Features />
       <Advantages />
+      <Pricing />
     </div>
   );
 }
