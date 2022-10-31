@@ -7,6 +7,7 @@ import Features from "./containers/features/Features";
 import Advantages from "./containers/advantages/Advantages";
 import Pricing from "./containers/pricing/Pricing";
 import Reviews from "./containers/reviews/Reviews";
+import Boilerplate from "./components/boilerplate/Boilerplate";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Advantages />
       <Pricing />
       <Reviews />
+      <Boilerplate />
     </div>
   );
 }

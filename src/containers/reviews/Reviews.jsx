@@ -39,7 +39,7 @@ const Reviews = () => {
           />
 
           <Review
-            text="“Hey Fintaskyou all did an amazing job. It's seriously saving me so much time. Screenshots don't disappear right away and I can draw & add arrows to screenshots instantly"
+            text="Hey Fintaskyou all did an amazing job. It's seriously saving me so much time. Screenshots don't disappear right away and I can draw & add arrows to screenshots instantly"
             img={headshot4}
             name="Pilliaf Tom"
             title="Senior Manager"
