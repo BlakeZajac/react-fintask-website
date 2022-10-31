@@ -1,5 +1,6 @@
 import React from "react";
 import img from "../../assets/boilerplate/boilerplate-01.png";
+import Newsletter from "../../components/newsletter/Newsletter";
 import "./boilerplate.scss";
 
 const Boilerplate = () => {
@@ -18,10 +19,7 @@ const Boilerplate = () => {
           </p>
         </div>
 
-        <div className="boilerplate__newsletter">
-          <input type="text" placeholder="Email address" />
-          <button type="button">Subscribe</button>
-        </div>
+        <Newsletter />
       </div>
     </div>
   );

@@ -38,6 +38,14 @@
         }
       }
 
+      &:nth-of-type(7),
+      &:nth-of-type(8),
+      &:nth-of-type(9) {
+        @media all and (min-width: $breakpoint-desktop) {
+          margin-bottom: 0;
+        }
+      }
+
       @media all and (min-width: $breakpoint-desktop) {
         width: 31.33%;
 
