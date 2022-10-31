@@ -1,0 +1,101 @@
+@import "../../App.scss";
+
+.reviews {
+  &__heading {
+    text-align: center;
+    padding-bottom: 5rem;
+
+    @media all and (max-width: $breakpoint-tablet) {
+      padding-bottom: 3rem;
+    }
+  }
+
+  &__items {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    &__item {
+      width: 100%;
+      padding: 1.5rem 3rem;
+      background: $color-white;
+      border: 1px solid #e0e0e0;
+      border-radius: 12px;
+      position: relative;
+      top: 0;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        top: -10px;
+        transition: all 0.2s ease-in-out;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+
+        @media all and (max-width: $breakpoint-tablet) {
+          margin-bottom: 1rem;
+        }
+      }
+
+      @media all and (min-width: $breakpoint-desktop) {
+        width: 31.33%;
+
+        &:not(:last-child) {
+          margin-right: 2%;
+        }
+      }
+
+      @media all and (max-width: $breakpoint-tablet) {
+        padding: 1rem;
+      }
+
+      &__content {
+        padding-bottom: 2rem;
+
+        @media all and (max-width: $breakpoint-tablet) {
+          padding-bottom: 1rem;
+        }
+
+        p {
+          font-weight: 700;
+
+          @media all and (min-width: $breakpoint-tablet-up) {
+            font-size: 1.5rem;
+          }
+
+          &::before,
+          &::after {
+            content: '"';
+          }
+        }
+      }
+
+      &__wrapper {
+        display: flex;
+        align-items: center;
+      }
+
+      &__img {
+        padding-right: 1rem;
+      }
+
+      &__name {
+        p {
+          font-size: 1.125rem;
+
+          @media all and (max-width: $breakpoint-tablet) {
+            font-size: 1rem;
+          }
+        }
+        p.name {
+          font-weight: 700;
+        }
+
+        p.title {
+          color: #474747;
+        }
+      }
+    }
+  }
+}

@@ -4,6 +4,10 @@
   &__heading {
     padding-bottom: 5rem;
     text-align: center;
+
+    @media all and (max-width: $breakpoint-tablet) {
+      padding-bottom: 3rem;
+    }
   }
 
   &__items {
