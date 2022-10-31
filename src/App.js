@@ -9,6 +9,7 @@ import Pricing from "./containers/pricing/Pricing";
 import Reviews from "./containers/reviews/Reviews";
 import Boilerplate from "./components/boilerplate/Boilerplate";
 import CTA from "./components/cta/CTA";
+import Footer from "./containers/footer/Footer";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Reviews />
       <Boilerplate />
       <CTA />
+      <Footer />
     </div>
   );
 }
