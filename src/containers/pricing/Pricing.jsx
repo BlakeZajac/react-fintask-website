@@ -30,7 +30,7 @@ const Pricing = () => {
             price="$12.99"
             duration="per month"
             point1="Everything in Individual"
-            point2="Centralized control of labor costs and billable rates for team members"
+            point2="Centralised control of labor costs and billable rates for team members"
             point3="Single sign-on (SSO)"
             buttonText="Get started"
           />
