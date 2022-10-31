@@ -1,4 +1,5 @@
 import React from "react";
+import { AiOutlineCheck } from "react-icons/ai";
 import Button from "../button/Button";
 
 const PricingCard = ({
@@ -30,11 +31,15 @@ const PricingCard = ({
       </div>
 
       <div className="pricing__items__item__list">
-        <ul>
-          <li>{point1}</li>
-          <li>{point2}</li>
-          <li>{point3}</li>
-        </ul>
+        <p>
+          <AiOutlineCheck class="purple" /> <span>{point1}</span>
+        </p>
+        <p>
+          <AiOutlineCheck class="purple" /> <span>{point2}</span>
+        </p>
+        <p>
+          <AiOutlineCheck class="purple" /> <span>{point3}</span>
+        </p>
       </div>
 
       <div className="pricing__items__item__button">
