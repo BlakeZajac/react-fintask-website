@@ -32,13 +32,13 @@ const PricingCard = ({
 
       <div className="pricing__items__item__list">
         <p>
-          <AiOutlineCheck class="purple" /> <span>{point1}</span>
+          <AiOutlineCheck className="purple" /> <span>{point1}</span>
         </p>
         <p>
-          <AiOutlineCheck class="purple" /> <span>{point2}</span>
+          <AiOutlineCheck className="purple" /> <span>{point2}</span>
         </p>
         <p>
-          <AiOutlineCheck class="purple" /> <span>{point3}</span>
+          <AiOutlineCheck className="purple" /> <span>{point3}</span>
         </p>
       </div>
 

@@ -49,6 +49,25 @@
     }
   }
 
+  &--black {
+    background: #fff;
+    color: $color-black;
+    border: 4px solid $color-black;
+    box-shadow: $button-black-shadow;
+    transition: all 0.1s ease-in-out;
+
+    .btn__dot {
+      &::before {
+        display: none;
+      }
+    }
+
+    &:hover {
+      box-shadow: 14px 14px 0 $color-black;
+      transition: all 0.1s ease-in-out;
+    }
+  }
+
   &__dot {
     display: flex;
     align-items: center;

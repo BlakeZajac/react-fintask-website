@@ -1,6 +1,5 @@
 import "./App.scss";
-import ReactDOM from "react-dom/client";
-import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/navbar/Navbar";
 import Hero from "./components/hero/Hero";
 import Brand from "./components/brand/Brand";
 import Features from "./containers/features/Features";
@@ -14,6 +13,7 @@ import Footer from "./containers/footer/Footer";
 function App() {
   return (
     <div className="App">
+      <Navbar />
       <Hero />
       <Brand />
       <Features />

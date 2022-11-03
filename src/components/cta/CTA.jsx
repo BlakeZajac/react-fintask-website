@@ -9,7 +9,8 @@ const CTA = () => {
       <div className="row">
         <div className="cta__content">
           <h2>
-            Allow your team to be more <span class="orange">productive</span>
+            Allow your team to be more{" "}
+            <span className="orange">productive</span>
           </h2>
           <Button text="Get started for free" color="btn--purple" />
         </div>
